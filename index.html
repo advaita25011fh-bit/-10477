@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FTC 10477 | Rapid Robots</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <style>
+        :root {
+            --primary: #00d4ff; 
+            --secondary: #ff8c00;
+            --bg: #0a0b10;
+            --card-bg: #161b22;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, sans-serif;
+            background-color: var(--bg);
+            color: white;
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            height: 70vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1531685670742-14db584b5006?q=80&w=2000');
+            background-size: cover;
+            text-align: center;
+            border-bottom: 4px solid var(--primary);
+        }
+
+        .hero-title { font-size: 5rem; margin: 0; letter-spacing: 8px; color: white; }
+        .hero-subtitle { font-size: 1.5rem; color: var(--primary); font-weight: bold; }
+        .worlds-badge { 
+            background: var(--secondary); 
+            color: black; 
+            padding: 5px 15px; 
+            border-radius: 20px; 
+            font-weight: bold; 
+            margin-top: 15px;
+            font-size: 0.9rem;
+        }
+
+        .container { max-width: 1200px; margin: auto; padding: 40px 20px; }
+
+        /* History Section */
+        .history-box {
+            background: rgba(0, 212, 255, 0.1);
+            border: 1px solid var(--primary);
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+
+        /* Team Grid */
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .member-card {
+            background: var(--card-bg);
+            padding: 25px;
+            border-radius: 15px;
+            border: 1px solid #30363d;
+            transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .member-card:hover {
+            transform: scale(1.05);
+            border-color: var(--primary);
+            box-shadow: 0 10px 30px rgba(0, 212, 255, 0.2);
+        }
+
+        .years-tag {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: #30363d;
+            font-size: 0.7rem;
+            padding: 4px 8px;
+            border-radius: 5px;
+            color: var(--primary);
+        }
+
+        .member-card h3 { margin: 10px 0 5px 0; color: var(--primary); }
+        .focus { font-weight: bold; color: var(--secondary); font-size: 0.9rem; display: block; margin-bottom: 10px;}
+        .sports { font-style: italic; font-size: 0.85rem; color: #8b949e; border-top: 1px solid #30363d; pt: 10px; margin-top: 10px;}
+
+        h2 { font-size: 2.5rem; text-align: center; margin-bottom: 40px; }
+        footer { text-align: center; padding: 60px; color: #8b949e; background: #050608; }
+    </style>
+</head>
+<body>
+
+<header>
+    <p style="letter-spacing: 3px; margin-bottom: 0;">EST. 2015</p>
+    <h1 class="hero-title">10477</h1>
+    <p class="hero-subtitle">RAPID ROBOTS</p>
+    <div class="worlds-badge">🚀 3X WORLD CHAMPIONSHIP QUALIFIER</div>
+</header>
+
+<div class="container">
+    
+    <section class="history-box">
+        <h2>Our Legacy</h2>
+        <p>Based in Novi, Michigan, the Rapid Robots have been pushing the boundaries of FTC since 2015. We pride ourselves on a culture of excellence, consistently competing at the highest level.</p>
+        <div style="display: flex; justify-content: center; gap: 20px; font-weight: bold; color: var(--primary);">
+            <span>🌍 2022-23 Worlds</span>
+            <span>🌍 2023-24 Worlds</span>
+            <span>🌍 2025-26 Worlds</span>
+        </div>
+    </section>
+
+    <h2>The 2025-26 Crew</h2>
+    <div class="team-grid">
+        <div class="member-card">
+            <span class="years-tag">3 YEARS</span>
+            <h3>Advaita</h3>
+            <span class="focus">Build • Finance</span>
+            <p class="sports">Volleyball, Swim, Track</p>
+        </div>
+
+        <div class="member-card">
+            <span class="years-tag">1 YEAR</span>
+            <h3>Jasper</h3>
+            <span class="focus">Build • Outreach</span>
+            <p class="sports">Soccer, Track</p>
+        </div>
+
+        <div class="member-card">
+            <span class="years-tag">3 YEARS</span>
+            <h3>Sashvanth</h3>
+            <span class="focus">Design • 3D Printing</span>
+        </div>
+
+        <div class="member-card">
+            <span class="years-tag">2 YEARS</span>
+            <h3>Darsheel</h3>
+            <span class="focus">Build • Design</span>
+        </div>
+
+        <div class="member-card">
+            <span class="years-tag">2 YEARS</span>
+            <h3>Ansh</h3>
+            <span class="focus">Management • Structure</span>
+            <p class="sports">Track</p>
+        </div>
+
+        <div class="member-card">
+            <span class="years-tag">1 YEAR</span>
+            <h3>Ronav</h3>
+            <span class="focus">Sponsors • Finance</span>
+            <p class="sports">Cricket</p>
+        </div>
+
+        <div class="member-card">
+            <span class="years-tag">2 YEARS</span>
+            <h3>Amy</h3>
+            <span class="focus">Build • Programming</span>
+            <p class="sports">Volleyball, Soccer, Track</p>
+        </div>
+
+        <div class="member-card">
+            <span class="years-tag">3 YEARS</span>
+            <h3>Aarya</h3>
+            <span class="focus">Programming • Strategy</span>
+            <p class="sports">Volleyball, Tennis, Track</p>
+        </div>
+
+        <div class="member-card">
+            <span class="years-tag">3 YEARS</span>
+            <h3>Srishti</h3>
+            <span class="focus">Outreach • Media</span>
+            <p class="sports">Volleyball, Swim, Track</p>
+        </div>
+
+        <div class="member-card">
+            <span class="years-tag">3 YEARS</span>
+            <h3>Asude</h3>
+            <span class="focus">Media • Outreach</span>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>Rapid Robots #10477 • Novi, Michigan</p>
+    <p style="font-size: 0.8rem;">ENGINEERED FOR SPEED. BUILT FOR NOVI.</p>
+</footer>
+
+</body>
+</html>
